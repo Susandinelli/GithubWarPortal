@@ -23,12 +23,16 @@ import getApprovedRouter from "./routes/Admin/getApproved.js"
 import getSubmissionsRouter from "./routes/Admin/getSubmissions.js"
 import removeCardRouter from "./routes/Admin/removeCard.js";
 import addCharacterRouter from "./routes/Admin/character.js";
+import getEmailListRouter from "./routes/Admin/getEmails.js";
+import getCreatorAdminRouter from "./routes/Admin/getCreators.js";
+import getStoreOwnerRouter from "./routes/Admin/getStoreOwners.js";
 //Checkout Routers
 import creatorCheckoutRouter from "./routes/Stripe/creatorCheckout.js";
 import creatorPortalRouter from "./routes/Stripe/creatorPortal.js";
 import creatorWebhookRouter from "./routes/Stripe/creatorWebhook.js";
 import createCreatorRouter from "./routes/SignUp/creator.js";
 import createStoreRouter from "./routes/SignUp/store.js";
+import getCreatorRouter from "./routes/Admin/getCreators.js";
 const port = process.env.PORT || 5000;
 
 const app = express();
@@ -56,6 +60,9 @@ app.use("/approve", approveSubmissionRouter);
 app.use("/GetApproved", getApprovedRouter);
 app.use("/RemoveCard", removeCardRouter);
 app.use("/AddCharacter", addCharacterRouter);
+app.use("/ViewEmailList", getEmailListRouter);
+app.use("/ViewCreators", getCreatorAdminRouter);
+app.use("/ViewStoreOwners", getStoreOwnerRouter);
 //Router for creator subscriptions
 app.use("/create-creator-checkout-session", creatorCheckoutRouter);
 app.use("/create-creator-portal-session", creatorPortalRouter);

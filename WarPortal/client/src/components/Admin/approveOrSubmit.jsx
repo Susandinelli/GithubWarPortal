@@ -20,10 +20,17 @@ export default function ApproveOrSubmit() {
             </Link>{" "}
           </span>
         </button>
-        <button>
+        <button class=" bg-gradient-to-r  hover:bg-gradient-to-t hover:from-yellow-500 hover:via-red-800  hover:to-yellow-500 from-yellow-500 via-red-800 p-2 to-yellow-500  rounded-full ">
           <span>
-            <Link to="/AddCharacters">
+            <Link class="p-2 text-red-900 bg-white rounded-full" to="/AddCharacters">
               Add Character
+            </Link>
+          </span>
+        </button>
+        <button class=" bg-gradient-to-r  hover:bg-gradient-to-t hover:from-yellow-500 hover:via-red-800  hover:to-yellow-500 from-yellow-500 via-red-800 p-2 to-yellow-500  rounded-full ">
+          <span>
+            <Link class="p-2 text-red-900 bg-white rounded-full" to="/ViewUsers">
+              View Users
             </Link>
           </span>
         </button>

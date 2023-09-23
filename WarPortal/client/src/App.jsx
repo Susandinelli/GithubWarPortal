@@ -13,6 +13,7 @@ import ApproveCards from "./components/Admin/approveCards.jsx";
 import SubmitCards from "./components/Admin/submitCards.jsx";
 import ApproveOrSubmit from "./components/Admin/approveOrSubmit.jsx";
 import AddCharacter from "./components/Admin/addCharacter";
+import ViewUsers from "./components/Admin/viewUsers";
 import SignIn from "./components/SignIn/SignIn.jsx";
 import Create from "./components/Create/Create.jsx";
 import StoreOwner from "./components/Create/store.jsx";
@@ -55,6 +56,7 @@ function App() {
           <Route path="/CreatorSignUp" element={<CreatorSignUp />} />
           <Route path="/StoreOwnerSignUp" element={<StoreOwnerSignUp />} />
           <Route path="/AddCharacters" element={<AddCharacter />} />
+          <Route path="/ViewUsers" element={<ViewUsers />} />
         </Routes>
       </BrowserRouter>
       <Footer />
