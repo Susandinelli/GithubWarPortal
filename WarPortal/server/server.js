@@ -12,7 +12,7 @@ import creatorSubmissionRouter from "./routes/CardCreator/creatorSubmission.js";
 import creatorSignInRouter from "./routes/SignIn/creator.js";
 import storeSignInRouter from "./routes/SignIn/store.js";
 
-
+import signUpNewsletterRouter from "./routes/SignUp/newsletter.js"
 //Stories
 import creatureInfoRouter from "./routes/CharacterStories/creatures.js";
 import characterInfoRouter from "./routes/CharacterStories/characters.js";
@@ -76,6 +76,7 @@ app.use("/webhook-creator", creatorWebhookRouter);
 //Routes for sign up
 app.use("/CreateCreator", createCreatorRouter);
 app.use("/CreateStore", createStoreRouter);
+app.use("/NewsletterSignUp", signUpNewsletterRouter)
 
 
 //Stories 

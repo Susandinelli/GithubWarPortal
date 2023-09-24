@@ -27,6 +27,7 @@ import CreatorStripe from "./components/Stripe/creator.jsx";
 import SignUp from "./components/SignUp/SignUp.jsx";
 import CreatorSignUp from "./components/SignUp/creator.jsx";
 import StoreOwnerSignUp from "./components/SignUp/store";
+import Newsletter from "./components/SignIn/newsletter.jsx";
 function App() {
   return (
     <>
@@ -54,6 +55,7 @@ function App() {
           <Route path="/CreatorStripe" element={<CreatorStripe />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/CreatorSignUp" element={<CreatorSignUp />} />
+          <Route path="/Newsletter" element={<Newsletter />} />
           <Route path="/StoreOwnerSignUp" element={<StoreOwnerSignUp />} />
           <Route path="/AddCharacters" element={<AddCharacter />} />
           <Route path="/ViewUsers" element={<ViewUsers />} />
