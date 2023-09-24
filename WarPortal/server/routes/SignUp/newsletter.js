@@ -8,7 +8,8 @@ signUpNewsletterRouter.post("/", async( req,res)=> {
 
 
     const email = req.body.email;
-    const alreadyAdded = prisma.newsletter.findFirst({
+    console.log(email);
+    const alreadyAdded = await prisma.newsletter.findFirst({
         where: {
             email:email
         }
@@ -18,7 +19,7 @@ signUpNewsletterRouter.post("/", async( req,res)=> {
        email: email
     } }); console.log(addedData);
     } else {
-        console.log("already added");
+        res.send("Already Added");
     }
    
    
