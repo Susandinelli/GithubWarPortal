@@ -36,6 +36,8 @@ export default function ViewUsers() {
   return (
     <>
       <div class="flex flex-col justify-center m-auto">
+        <h1                   class=" w-1/3 rounded-full bg-gradient-to-tr  from-yellow-500   via-red-800  to-yellow-500 p-1 text-white hover:from-red-800 hover:via-yellow-500 hover:to-red-800 flex justify-center m-auto text-center font-zen"
+>View Your Users!</h1>
         <button
           onClick={() => {
             setOpenEmailList(!openEmailList);
@@ -46,7 +48,7 @@ export default function ViewUsers() {
         </button>
         <div >
         {openEmailList ? (
-          <div class="flex justify-center m-auto">
+          <div class="flex flex-wrap justify-center m-auto">
             {emailList.map((data) => (
               <div key={data.newsletterId}>
                 <div  >

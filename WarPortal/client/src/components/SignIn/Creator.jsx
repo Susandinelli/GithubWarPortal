@@ -50,15 +50,15 @@ export default function CreatorSignIn() {
       <section class="flex bg-white dark:bg-black text-red-900 dark:text-amber-500 justify-center m-auto flex-wrap md:text-xl md:align-middle text-center">
         <form
           onSubmit={handleSubmit}
-          class="flex flex-col md:flex-row md:gap-4 md:"
+          class="flex flex-col w-full  m-4 lg:flex-col md:gap-4 md:"
         >
           <div>
-            <h1 class=" m-auto md:mt-8 md:mr-4 mt-4 mb-4  text-xl flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white w-full bg-white dark:bg-black dark:text-white md:p-4">
+            <h1 class=" m-auto lg:m-auto md:mt-8 md:mr-4 mt-4 mb-4 lg:w-1/4 w-1/2 text-xl flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white bg-white dark:bg-black dark:text-white md:p-4">
               Sign In
             </h1>
           </div>
           <div>
-            <label class="  m-auto mt-2 mb-2 flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white w-full bg-white dark:bg-black dark:text-white md:p-4">
+            <label class=" lg:w-1/4 m-auto mt-2 mb-2 flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white w-1/2 bg-white dark:bg-black dark:text-white md:p-4">
               Email
             </label>
             <input
@@ -67,12 +67,12 @@ export default function CreatorSignIn() {
               placeholder="Email Here..."
               value={userInput.email}
               onChange={handleChange}
-              class="bg-white  m-auto mt-2 mb-4 dark:border-amber-500 border-2 border-red-800 w-full flex p-2 justify-center align-middle dark:bg-black text-red-900 dark:text-white rounded-full text-center"
+              class="bg-white  m-auto mt-2 mb-4 dark:border-amber-500 border-2 border-red-800 w-full lg:w-2/3 flex p-2 justify-center align-middle dark:bg-black text-red-900 dark:text-white rounded-full text-center"
               required
             ></input>
           </div>
           <div>
-            <label class=" m-auto mt-2 mb-2 flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white  w-full bg-white dark:bg-black dark:text-white md:p-4">
+            <label class=" m-auto mt-2 mb-2 flex justify-center  font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white lg:w-1/4 w-1/2 bg-white dark:bg-black dark:text-white md:p-4">
               Password
             </label>
             <input
@@ -81,7 +81,7 @@ export default function CreatorSignIn() {
               placeholder="Password Here..."
               value={userInput.password}
               onChange={handleChange}
-              class="bg-white  m-auto mt-2 mb-4   dark:border-amber-500 border-2 border-red-800 w-full flex p-2 justify-center align-middle dark:bg-black text-red-900 dark:text-white rounded-full text-center"
+              class="bg-white  m-auto mt-2 mb-4   dark:border-amber-500 border-2 border-red-800 w-full lg:w-2/3 flex p-2 justify-center align-middle dark:bg-black text-red-900 dark:text-white rounded-full text-center"
               required
             ></input>
           </div>
