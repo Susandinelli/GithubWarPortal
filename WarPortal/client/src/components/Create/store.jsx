@@ -19,7 +19,7 @@ export default function StoreOwner() {
     moveFour: "",
     moveFourDescription: "",
     gmail: "",
-    storeOwnerId: "",
+    StoreOwnerId: "",
   });
   console.log(userInput);
   const handleChange = (event) => {
@@ -46,7 +46,7 @@ export default function StoreOwner() {
           moveFour: userInput.moveFour,
           moveFourDescription: userInput.moveFourDescription,
           gmail: userInput.gmail,
-          storeOwnerId: userInput.storeOwnerId,
+          StoreOwnerId: userInput.StoreOwnerId,
         }),
       });
       console.log(submit);
@@ -178,16 +178,17 @@ export default function StoreOwner() {
                     Move 1 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveOneDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveOneDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveOneDescription"
+            placeholder="Enter Here"
+            value={userInput.moveOneDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
+              
                 </div>
               </section>
 
@@ -219,16 +220,17 @@ export default function StoreOwner() {
                     Move 2 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveTwoDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveTwoDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveTwoDescription"
+            placeholder="Enter Here"
+            value={userInput.moveTwoDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap flex justify-center resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
+                 
                 </div>
               </section>
 
@@ -260,16 +262,17 @@ export default function StoreOwner() {
                     Move 3 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveThreeDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveThreeDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveThreeDescription"
+            placeholder="Enter Here"
+            value={userInput.moveThreeDescription}
+            onChange={handleChange}
+            class="bg-white word-wflex justify-center rap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
+              
                 </div>
               </section>
 
@@ -301,16 +304,16 @@ export default function StoreOwner() {
                     Move 4 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveFourDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveFourDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveFourDescription"
+            placeholder="Enter Here"
+            value={userInput.moveFourDescription}
+            onChange={handleChange}
+            class="bg-white word-wraflex justify-center p resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
                 </div>
               </section>
               <section class="flex flex-col justify-center">
@@ -332,18 +335,18 @@ export default function StoreOwner() {
                 </div>
               </section>
               <section>
-                <label htmlFor="Creator ID">
+                <label htmlFor="Store ID">
                   <h2 class="flex justify-center m-auto max-w-md font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white mt-3 w-full bg-white dark:bg-black dark:text-amber-400 lg:p-4">
-                    Creator ID
+                    Store ID
                   </h2>
                 </label>
                 <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
                   <input
                     type="text"
                     class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="creatorId"
+                    name="StoreOwnerId"
                     placeholder="Enter Here"
-                    value={userInput.storeOwnerId}
+                    value={userInput.StoreOwnerId}
                     onChange={handleChange}
                     required
                   ></input>

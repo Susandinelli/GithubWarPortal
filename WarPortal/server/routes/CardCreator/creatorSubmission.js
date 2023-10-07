@@ -35,7 +35,7 @@ creatorSubmissionRouter.post("/", async (req, res) => {
       moveFour: moveFour,
       moveFourDescription: moveFourDescription,
       gmail: gmail,
-      creatorId: creatorId
+      CreatorId: creatorId
     },
   });
   console.log(submission);

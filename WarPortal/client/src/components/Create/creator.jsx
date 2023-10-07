@@ -123,7 +123,7 @@ export default function Creator() {
   //Add frontend API's here
   return (
     <>
-      <div class=" bg-white dark:bg-black text-center flex-col flex justify-center">
+      <div class=" bg-white dark:bg-black text-center flex-col text-xl flex justify-center">
         <div class="m-4">
           <header class="lg:p-4 m-auto lg:text-3xl lg:w-1/2 max-w-sm flex justify-center font-zen rounded-full bg-gradient-to-tr from-amber-500 via-red-800 to-amber-500 p-4 text-white mt-3">
             <h2>Create Your Own Card!</h2>
@@ -207,16 +207,16 @@ export default function Creator() {
                     Move 1 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveOneDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveOneDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm pt-2 pb-2 bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveOneDescription"
+            placeholder="Enter Here"
+            value={userInput.moveOneDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
                 </div>
               </section>
 
@@ -233,6 +233,7 @@ export default function Creator() {
                   </h2>
                 </label>
                 <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                  
                   <input
                     type="text"
                     class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
@@ -248,16 +249,17 @@ export default function Creator() {
                     Move 2 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveTwoDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveTwoDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveTwoDescription"
+            placeholder="Enter Here"
+            value={userInput.moveTwoDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
+                
                 </div>
               </section>
 
@@ -289,16 +291,16 @@ export default function Creator() {
                     Move 3 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveThreeDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveThreeDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveThreeDescription"
+            placeholder="Enter Here"
+            value={userInput.moveThreeDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
                 </div>
               </section>
 
@@ -330,16 +332,17 @@ export default function Creator() {
                     Move 4 Description
                   </h2>
                 </label>
-                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-full bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
-                  <input
-                    type="text"
-                    class="bg-white w-full flex p-4 justify-center m-auto align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-full text-center"
-                    name="moveFourDescription"
-                    placeholder="Enter Here"
-                    value={userInput.moveFourDescription}
-                    onChange={handleChange}
-                    required
-                  ></input>
+                <div class="lg:text-3xl w-full m-auto mt-2 text-sm rounded-sm bg-gradient-to-tl p-1 text-red-900 from-red-800 via-amber-500 to-red-800 hover:from-amber-500 focus:from-amber-500 focus:to-amber-500 focus:via-red-800 hover:to-amber-500 hover:via-red-800">
+                <textarea
+            name="moveFourDescription"
+            placeholder="Enter Here"
+            value={userInput.moveFourDescription}
+            onChange={handleChange}
+            class="bg-white word-wrap resize-y break-words overflow-y-auto w-full m-auto flex text-2xl justify-center align-middle dark:bg-black text-red-900 dark:text-amber-400 rounded-sm text-center"
+            contentEditable="true"
+          required
+          />
+                
                 </div>
               </section>
               <section class="flex flex-col justify-center">

@@ -20,11 +20,12 @@ storeSubmissionRouter.post("/", async (req, res) => {
   const moveFour = req.body.moveFour;
   const moveFourDescription = req.body.moveFourDescription;
   const gmail = req.body.gmail;
-  const storeOwnerId = req.body.storeOwnerId;
+  const StoreOwnerId = req.body.StoreOwnerId;
 
   //run a prisma query to store the data in the database
   const submission = await prisma.approval.create({
     data: {
+      Role: 'STORE',
       cardName: cardName,
       moveOne: moveOne,
       moveOneDescription: moveOneDescription,
@@ -35,7 +36,7 @@ storeSubmissionRouter.post("/", async (req, res) => {
       moveFour: moveFour,
       moveFourDescription: moveFourDescription,
       gmail: gmail,
-      storeOwnerId: storeOwnerId
+      StoreOwnerId: StoreOwnerId
     },
   });
   console.log(submission);
